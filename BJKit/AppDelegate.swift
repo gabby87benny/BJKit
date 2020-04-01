@@ -16,7 +16,16 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
     // MARK: - UIApplicationDelegate
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let detailManager = DetailViewManager()
+        
+        if let splitVC = window?.rootViewController as? UISplitViewController {
+            splitVC.preferredDisplayMode = .allVisible
+            splitVC.delegate = detailManager
+            splitVC.primaryBackgroundStyle = .sidebar
+            detailManager.splitVC = splitVC
+        }
+        
         return true
     }
     
