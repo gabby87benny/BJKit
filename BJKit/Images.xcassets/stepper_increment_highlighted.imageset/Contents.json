@@ -1,22 +1,19 @@
 {
   "images" : [
     {
-      "idiom" : "universal"
+      "idiom" : "universal",
+      "filename" : "increment_highlighted_1x.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "increment_highlighted_1x.png"
+      "filename" : "increment_highlighted_2x.png",
+      "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x",
-      "filename" : "increment_highlighted_2x.png"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x",
-      "filename" : "stepper_increment_highlighted_3x.png"
+      "filename" : "stepper_increment_highlighted_3x.png",
+      "scale" : "3x"
     }
   ],
   "info" : {

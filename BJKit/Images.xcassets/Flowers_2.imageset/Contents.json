@@ -1,12 +1,9 @@
 {
   "images" : [
     {
-      "idiom" : "universal"
-    },
-    {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "image_animal_4.png"
+      "filename" : "Flowers_2.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

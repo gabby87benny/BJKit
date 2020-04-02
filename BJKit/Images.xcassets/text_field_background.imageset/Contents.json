@@ -1,16 +1,13 @@
 {
   "images" : [
     {
-      "idiom" : "universal"
-    },
-    {
       "resizing" : {
         "mode" : "3-part-horizontal",
         "center" : {
           "mode" : "stretch",
           "width" : 0
         },
-        "capInsets" : {
+        "cap-insets" : {
           "right" : 1,
           "left" : 1
         }
@@ -26,7 +23,7 @@
           "mode" : "stretch",
           "width" : 0
         },
-        "capInsets" : {
+        "cap-insets" : {
           "right" : 1,
           "left" : 1
         }
@@ -37,8 +34,8 @@
     },
     {
       "idiom" : "universal",
-      "scale" : "3x",
-      "filename" : "text_field_background_3x.png"
+      "filename" : "text_field_background_3x.png",
+      "scale" : "3x"
     }
   ],
   "info" : {
