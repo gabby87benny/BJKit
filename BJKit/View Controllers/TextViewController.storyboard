@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OLh-ah-zyK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TextViews-->
+        <scene sceneID="Bgw-uk-eLl">
+            <objects>
+                <viewController id="OLh-ah-zyK" customClass="TextViewController" customModule="BJKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9HN-cG-cBP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lXh-dB-FAr">
+                                <rect key="frame" x="10" y="44" width="394" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">This is a UITextView that uses attributed text. You can programmatically modify the display of the text by making it bold, highlighted, underlined, tinted, symbols, and more. These attributes are defined in NSAttributedString.h. You can even embed attachments in an NSAttributedString!
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <integer key="NSLigature" value="0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="33.700000000000003" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="33.700000762939453">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="OLh-ah-zyK" id="FUm-VN-z8W"/>
+                                </connections>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lXh-dB-FAr" firstAttribute="top" secondItem="5cS-aA-dIi" secondAttribute="top" id="7n4-A2-4BV"/>
+                            <constraint firstItem="lXh-dB-FAr" firstAttribute="leading" secondItem="5cS-aA-dIi" secondAttribute="leading" constant="10" id="OIV-jB-zRW"/>
+                            <constraint firstItem="5cS-aA-dIi" firstAttribute="trailing" secondItem="lXh-dB-FAr" secondAttribute="trailing" constant="10" id="RPR-WE-eDP"/>
+                            <constraint firstItem="5cS-aA-dIi" firstAttribute="bottom" secondItem="lXh-dB-FAr" secondAttribute="bottom" constant="10" id="rhN-Ti-6jS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5cS-aA-dIi"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="TextViews" id="R2W-HV-uPR"/>
+                    <connections>
+                        <outlet property="textView" destination="lXh-dB-FAr" id="AD3-Vr-aZM"/>
+                        <outlet property="textViewBottomLayoutGuideConstraint" destination="rhN-Ti-6jS" id="IFy-pa-xZI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uss-Jg-zPV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-99" y="-6"/>
+        </scene>
+    </scenes>
+</document>

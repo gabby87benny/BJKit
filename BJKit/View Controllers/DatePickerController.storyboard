@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fil-Tk-kHu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Date Picker Controller-->
+        <scene sceneID="UZ4-uL-c8o">
+            <objects>
+                <viewController id="fil-Tk-kHu" customClass="DatePickerController" customModule="BJKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tbw-EK-edi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="lIv-wE-R5B">
+                                <rect key="frame" x="47" y="345" width="320" height="216"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xk-iD-EcG" userLabel="DateLabel">
+                                <rect key="frame" x="47" y="593" width="320" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6xk-iD-EcG" firstAttribute="trailing" secondItem="lIv-wE-R5B" secondAttribute="trailing" id="Bgz-5b-bog"/>
+                            <constraint firstItem="6xk-iD-EcG" firstAttribute="leading" secondItem="lIv-wE-R5B" secondAttribute="leading" id="Qrx-Uw-Sxe"/>
+                            <constraint firstItem="6xk-iD-EcG" firstAttribute="top" secondItem="lIv-wE-R5B" secondAttribute="bottom" constant="32" id="TnC-7e-kTF"/>
+                            <constraint firstItem="lIv-wE-R5B" firstAttribute="centerX" secondItem="qav-mB-gB8" secondAttribute="centerX" id="hLc-aj-3Sk"/>
+                            <constraint firstItem="lIv-wE-R5B" firstAttribute="centerY" secondItem="qav-mB-gB8" secondAttribute="centerY" id="nAD-6R-ftB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qav-mB-gB8"/>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="6xk-iD-EcG" id="K0j-24-fz2"/>
+                        <outlet property="datePicker" destination="lIv-wE-R5B" id="sGs-fU-BfX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JaT-HB-dfe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="-406.47321428571428"/>
+        </scene>
+    </scenes>
+</document>
