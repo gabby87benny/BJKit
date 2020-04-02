@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="42j-sL-8Jf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Segmented Control View Controller-->
+        <scene sceneID="Rw0-Q7-0rQ">
+            <objects>
+                <tableViewController id="42j-sL-8Jf" customClass="SegmentedControlViewController" customModule="BJKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="CbQ-QG-sub">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Section-1" id="Faq-LP-BPl">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="f0E-LB-lNE">
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f0E-LB-lNE" id="8SJ-oP-iWG">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="idM-aV-YVq">
+                                                    <rect key="frame" x="50" y="6.5" width="314" height="32"/>
+                                                    <segments>
+                                                        <segment title="Check"/>
+                                                        <segment title="Search"/>
+                                                        <segment title="Tools"/>
+                                                    </segments>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="idM-aV-YVq" firstAttribute="leading" secondItem="8SJ-oP-iWG" secondAttribute="leading" constant="50" id="HsD-7n-d5w"/>
+                                                <constraint firstAttribute="trailing" secondItem="idM-aV-YVq" secondAttribute="trailing" constant="50" id="kfy-Db-BxL"/>
+                                                <constraint firstItem="idM-aV-YVq" firstAttribute="centerY" secondItem="8SJ-oP-iWG" secondAttribute="centerY" id="uiB-JX-PYX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Section-2" id="yuz-bJ-GzC">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="hqS-DW-Nak">
+                                        <rect key="frame" x="0.0" y="155" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hqS-DW-Nak" id="k7E-kA-dtG">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pvN-sw-7Lt">
+                                                    <rect key="frame" x="50" y="6.5" width="314" height="32"/>
+                                                    <segments>
+                                                        <segment title="Check"/>
+                                                        <segment title="Search"/>
+                                                        <segment title="Tools"/>
+                                                    </segments>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="pvN-sw-7Lt" secondAttribute="trailing" constant="50" id="3gG-ow-4AN"/>
+                                                <constraint firstItem="pvN-sw-7Lt" firstAttribute="leading" secondItem="k7E-kA-dtG" secondAttribute="leading" constant="50" id="Hks-WP-dWw"/>
+                                                <constraint firstItem="pvN-sw-7Lt" firstAttribute="centerY" secondItem="k7E-kA-dtG" secondAttribute="centerY" id="oN7-M9-Dya"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Section-3" id="It8-Fi-XUl">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="2XU-74-X34">
+                                        <rect key="frame" x="0.0" y="254.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2XU-74-X34" id="mQB-zL-Uwe">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RfX-3Q-vqb">
+                                                    <rect key="frame" x="50" y="6.5" width="314" height="32"/>
+                                                    <segments>
+                                                        <segment title="Check"/>
+                                                        <segment title="Search"/>
+                                                        <segment title="Tools"/>
+                                                    </segments>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="RfX-3Q-vqb" firstAttribute="centerY" secondItem="mQB-zL-Uwe" secondAttribute="centerY" id="7FZ-dV-aBU"/>
+                                                <constraint firstItem="RfX-3Q-vqb" firstAttribute="leading" secondItem="mQB-zL-Uwe" secondAttribute="leading" constant="50" id="N5n-mM-Zgh"/>
+                                                <constraint firstAttribute="trailing" secondItem="RfX-3Q-vqb" secondAttribute="trailing" constant="50" id="aMa-PZ-huX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Section-4" id="fuN-ne-6rc">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="848-Vu-Jip">
+                                        <rect key="frame" x="0.0" y="354" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="848-Vu-Jip" id="2Xp-WV-uhg">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wyr-41-o1M">
+                                                    <rect key="frame" x="50" y="6.5" width="314" height="32"/>
+                                                    <segments>
+                                                        <segment title="Check"/>
+                                                        <segment title="Search"/>
+                                                        <segment title="Tools"/>
+                                                    </segments>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="wyr-41-o1M" secondAttribute="trailing" constant="50" id="YBP-0b-Ggb"/>
+                                                <constraint firstItem="wyr-41-o1M" firstAttribute="leading" secondItem="2Xp-WV-uhg" secondAttribute="leading" constant="50" id="dzg-YF-YRL"/>
+                                                <constraint firstItem="wyr-41-o1M" firstAttribute="centerY" secondItem="2Xp-WV-uhg" secondAttribute="centerY" id="feq-Bk-9hn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="42j-sL-8Jf" id="FTt-UC-L5y"/>
+                            <outlet property="delegate" destination="42j-sL-8Jf" id="Tm5-Rt-IXC"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="customBackgroundSegmentedControl" destination="wyr-41-o1M" id="2OD-hn-HBt"/>
+                        <outlet property="customSegmentsSegmentedControl" destination="RfX-3Q-vqb" id="7lK-Xy-mgu"/>
+                        <outlet property="defaultSegmentedControl" destination="idM-aV-YVq" id="7H0-DT-MwR"/>
+                        <outlet property="tintedSegmentedControl" destination="pvN-sw-7Lt" id="UBl-Vf-tL5"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NPJ-Ak-QHH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100.00000000000001" y="128.57142857142856"/>
+        </scene>
+    </scenes>
+</document>
