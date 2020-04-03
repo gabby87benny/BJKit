@@ -51,6 +51,8 @@
 		5BC520BB2436691800040443 /* TextFieldViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC520BA2436691800040443 /* TextFieldViewController.storyboard */; };
 		5BC520BD2436851700040443 /* TextViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC520BC2436851700040443 /* TextViewController.storyboard */; };
 		5BFC7A0F2436995E001EDAC0 /* DatePickerController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BFC7A0E2436995E001EDAC0 /* DatePickerController.storyboard */; };
+		5BFC7A112437B1E9001EDAC0 /* PickerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BFC7A102437B1E9001EDAC0 /* PickerViewController.storyboard */; };
+		5BFC7A132437E061001EDAC0 /* ProgressViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BFC7A122437E061001EDAC0 /* ProgressViewController.storyboard */; };
 		B51AD3F91B1A8A6A00083F63 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51AD3F71B1A8A6A00083F63 /* Search.storyboard */; };
 		B5C300DD1B0FC458003B05A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C300DC1B0FC458003B05A0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -102,6 +104,8 @@
 		5BC520BA2436691800040443 /* TextFieldViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TextFieldViewController.storyboard; sourceTree = "<group>"; };
 		5BC520BC2436851700040443 /* TextViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TextViewController.storyboard; sourceTree = "<group>"; };
 		5BFC7A0E2436995E001EDAC0 /* DatePickerController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DatePickerController.storyboard; sourceTree = "<group>"; };
+		5BFC7A102437B1E9001EDAC0 /* PickerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PickerViewController.storyboard; sourceTree = "<group>"; };
+		5BFC7A122437E061001EDAC0 /* ProgressViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProgressViewController.storyboard; sourceTree = "<group>"; };
 		B51AD3F81B1A8A6A00083F63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Search.storyboard; sourceTree = "<group>"; };
 		B5C300DC1B0FC458003B05A0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -192,7 +196,9 @@
 				5BC5206424325BB100040443 /* DatePickerController.swift */,
 				5BFC7A0E2436995E001EDAC0 /* DatePickerController.storyboard */,
 				5BC5205824325BB100040443 /* PickerViewController.swift */,
+				5BFC7A102437B1E9001EDAC0 /* PickerViewController.storyboard */,
 				5BC5206524325BB100040443 /* ProgressViewController.swift */,
+				5BFC7A122437E061001EDAC0 /* ProgressViewController.storyboard */,
 				5BC5206024325BB100040443 /* StackViewController.swift */,
 				5BC5205624325BB100040443 /* StepperViewController.swift */,
 				5BC5205F24325BB100040443 /* PageControlViewController.swift */,
@@ -299,8 +305,10 @@
 				228DBA0818BC53F1002BA12A /* Images.xcassets in Resources */,
 				5BC520B32435423C00040443 /* SwitchViewController.storyboard in Resources */,
 				B5C300DD1B0FC458003B05A0 /* LaunchScreen.storyboard in Resources */,
+				5BFC7A112437B1E9001EDAC0 /* PickerViewController.storyboard in Resources */,
 				B51AD3F91B1A8A6A00083F63 /* Search.storyboard in Resources */,
 				228DB9FA18BC53F1002BA12A /* InfoPlist.strings in Resources */,
+				5BFC7A132437E061001EDAC0 /* ProgressViewController.storyboard in Resources */,
 				5BC520AA24339F0400040443 /* ActivityIndicatorViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
