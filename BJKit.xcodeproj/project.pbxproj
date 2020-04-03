@@ -53,6 +53,9 @@
 		5BFC7A0F2436995E001EDAC0 /* DatePickerController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BFC7A0E2436995E001EDAC0 /* DatePickerController.storyboard */; };
 		5BFC7A112437B1E9001EDAC0 /* PickerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BFC7A102437B1E9001EDAC0 /* PickerViewController.storyboard */; };
 		5BFC7A132437E061001EDAC0 /* ProgressViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BFC7A122437E061001EDAC0 /* ProgressViewController.storyboard */; };
+		5BFC7A152437E91D001EDAC0 /* StepperViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BFC7A142437E91D001EDAC0 /* StepperViewController.storyboard */; };
+		5BFC7A172437EB1C001EDAC0 /* content.html in Resources */ = {isa = PBXBuildFile; fileRef = 5BFC7A162437EB1C001EDAC0 /* content.html */; };
+		5BFC7A192437EB4C001EDAC0 /* WebViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BFC7A182437EB4C001EDAC0 /* WebViewController.storyboard */; };
 		B51AD3F91B1A8A6A00083F63 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51AD3F71B1A8A6A00083F63 /* Search.storyboard */; };
 		B5C300DD1B0FC458003B05A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C300DC1B0FC458003B05A0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -106,6 +109,9 @@
 		5BFC7A0E2436995E001EDAC0 /* DatePickerController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DatePickerController.storyboard; sourceTree = "<group>"; };
 		5BFC7A102437B1E9001EDAC0 /* PickerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PickerViewController.storyboard; sourceTree = "<group>"; };
 		5BFC7A122437E061001EDAC0 /* ProgressViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProgressViewController.storyboard; sourceTree = "<group>"; };
+		5BFC7A142437E91D001EDAC0 /* StepperViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StepperViewController.storyboard; sourceTree = "<group>"; };
+		5BFC7A162437EB1C001EDAC0 /* content.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = content.html; sourceTree = "<group>"; };
+		5BFC7A182437EB4C001EDAC0 /* WebViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WebViewController.storyboard; sourceTree = "<group>"; };
 		B51AD3F81B1A8A6A00083F63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Search.storyboard; sourceTree = "<group>"; };
 		B5C300DC1B0FC458003B05A0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +157,7 @@
 		228DB9F618BC53F1002BA12A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5BFC7A162437EB1C001EDAC0 /* content.html */,
 				2200542E18BC54F5002A6E8B /* Localizable.strings */,
 				228DB9F718BC53F1002BA12A /* BJKit-Info.plist */,
 				228DB9F818BC53F1002BA12A /* InfoPlist.strings */,
@@ -199,10 +206,12 @@
 				5BFC7A102437B1E9001EDAC0 /* PickerViewController.storyboard */,
 				5BC5206524325BB100040443 /* ProgressViewController.swift */,
 				5BFC7A122437E061001EDAC0 /* ProgressViewController.storyboard */,
-				5BC5206024325BB100040443 /* StackViewController.swift */,
 				5BC5205624325BB100040443 /* StepperViewController.swift */,
-				5BC5205F24325BB100040443 /* PageControlViewController.swift */,
+				5BFC7A142437E91D001EDAC0 /* StepperViewController.storyboard */,
 				5BC5205C24325BB100040443 /* WebViewController.swift */,
+				5BFC7A182437EB4C001EDAC0 /* WebViewController.storyboard */,
+				5BC5206024325BB100040443 /* StackViewController.swift */,
+				5BC5205F24325BB100040443 /* PageControlViewController.swift */,
 				5BC520902432655200040443 /* Search */,
 				5BC5208C2432655200040443 /* Toolbar */,
 			);
@@ -299,12 +308,15 @@
 				5BC520B124351B8900040443 /* ButtonViewController.storyboard in Resources */,
 				3E5C084E1974991E00969DD7 /* Main.storyboard in Resources */,
 				5BFC7A0F2436995E001EDAC0 /* DatePickerController.storyboard in Resources */,
+				5BFC7A152437E91D001EDAC0 /* StepperViewController.storyboard in Resources */,
 				5BC520AC2433B48400040443 /* AlertControllerViewController.storyboard in Resources */,
 				5BC520BD2436851700040443 /* TextViewController.storyboard in Resources */,
 				5BC520BB2436691800040443 /* TextFieldViewController.storyboard in Resources */,
 				228DBA0818BC53F1002BA12A /* Images.xcassets in Resources */,
+				5BFC7A192437EB4C001EDAC0 /* WebViewController.storyboard in Resources */,
 				5BC520B32435423C00040443 /* SwitchViewController.storyboard in Resources */,
 				B5C300DD1B0FC458003B05A0 /* LaunchScreen.storyboard in Resources */,
+				5BFC7A172437EB1C001EDAC0 /* content.html in Resources */,
 				5BFC7A112437B1E9001EDAC0 /* PickerViewController.storyboard in Resources */,
 				B51AD3F91B1A8A6A00083F63 /* Search.storyboard in Resources */,
 				228DB9FA18BC53F1002BA12A /* InfoPlist.strings in Resources */,
