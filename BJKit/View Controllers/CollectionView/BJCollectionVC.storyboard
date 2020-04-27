@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NUG-a6-k68">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Collection View Controller-->
+        <scene sceneID="7GI-R2-25g">
+            <objects>
+                <viewController id="NUG-a6-k68" customClass="BJCollectionViewController" customModule="BJKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A7Z-8I-8wD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VH2-Gv-VzU">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YVc-1T-eQv">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BJCollectionViewCellIdentifier" id="Krh-bP-z85" customClass="BJCollectionViewCell" customModule="BJKit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2Cd-Qf-tgv">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2FM-f7-P7l">
+                                                    <rect key="frame" x="25" y="25" width="0.0" height="0.0"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="2FM-f7-P7l" firstAttribute="centerY" secondItem="2Cd-Qf-tgv" secondAttribute="centerY" id="Yx0-i0-gr0"/>
+                                                <constraint firstItem="2FM-f7-P7l" firstAttribute="centerX" secondItem="2Cd-Qf-tgv" secondAttribute="centerX" id="s7w-Ad-wD5"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="textLabel" destination="2FM-f7-P7l" id="i9P-7d-QmF"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="NUG-a6-k68" id="lB4-OX-cj0"/>
+                                    <outlet property="delegate" destination="NUG-a6-k68" id="QRI-sA-aoN"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fvC-bp-KsJ" firstAttribute="trailing" secondItem="VH2-Gv-VzU" secondAttribute="trailing" id="2Bc-Si-pA0"/>
+                            <constraint firstItem="VH2-Gv-VzU" firstAttribute="leading" secondItem="fvC-bp-KsJ" secondAttribute="leading" id="MmD-eE-Xpe"/>
+                            <constraint firstItem="VH2-Gv-VzU" firstAttribute="top" secondItem="fvC-bp-KsJ" secondAttribute="top" id="hcJ-zb-rh1"/>
+                            <constraint firstItem="VH2-Gv-VzU" firstAttribute="bottom" secondItem="fvC-bp-KsJ" secondAttribute="bottom" id="mvd-S1-8fe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fvC-bp-KsJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="VH2-Gv-VzU" id="IWL-1y-Srb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gPT-Ms-Q8A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55.072463768115945" y="-648.21428571428567"/>
+        </scene>
+    </scenes>
+</document>

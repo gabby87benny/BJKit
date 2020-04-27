@@ -12,6 +12,9 @@
 		228DB9FA18BC53F1002BA12A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 228DB9F818BC53F1002BA12A /* InfoPlist.strings */; };
 		228DBA0818BC53F1002BA12A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 228DBA0718BC53F1002BA12A /* Images.xcassets */; };
 		3E5C084E1974991E00969DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E5C08501974991E00969DD7 /* Main.storyboard */; };
+		5B7D021D245747E700270872 /* BJCollectionVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7D021B245747E700270872 /* BJCollectionVC.storyboard */; };
+		5B7D021E245747E700270872 /* BJCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D021C245747E700270872 /* BJCollectionViewController.swift */; };
+		5B7D02202457490200270872 /* BJCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D021F2457490200270872 /* BJCollectionViewCell.swift */; };
 		5BC5207224325BB100040443 /* StepperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5205624325BB100040443 /* StepperViewController.swift */; };
 		5BC5207324325BB100040443 /* AlertControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5205724325BB100040443 /* AlertControllerViewController.swift */; };
 		5BC5207424325BB100040443 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5205824325BB100040443 /* PickerViewController.swift */; };
@@ -70,6 +73,9 @@
 		228DB9F918BC53F1002BA12A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		228DBA0718BC53F1002BA12A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3E5C084F1974991E00969DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B7D021B245747E700270872 /* BJCollectionVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BJCollectionVC.storyboard; sourceTree = "<group>"; };
+		5B7D021C245747E700270872 /* BJCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BJCollectionViewController.swift; sourceTree = "<group>"; };
+		5B7D021F2457490200270872 /* BJCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BJCollectionViewCell.swift; sourceTree = "<group>"; };
 		5BC5205624325BB100040443 /* StepperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepperViewController.swift; sourceTree = "<group>"; };
 		5BC5205724325BB100040443 /* AlertControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertControllerViewController.swift; sourceTree = "<group>"; };
 		5BC5205824325BB100040443 /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +189,16 @@
 			name = Application;
 			sourceTree = "<group>";
 		};
+		5B7D021A245747E700270872 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				5B7D021C245747E700270872 /* BJCollectionViewController.swift */,
+				5B7D021F2457490200270872 /* BJCollectionViewCell.swift */,
+				5B7D021B245747E700270872 /* BJCollectionVC.storyboard */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		5BC5205524325BB100040443 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +236,7 @@
 				5BFC7A1C24381ED3001EDAC0 /* PageControlViewController.storyboard */,
 				5BC520902432655200040443 /* Search */,
 				5BC5208C2432655200040443 /* Toolbar */,
+				5B7D021A245747E700270872 /* CollectionView */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -324,6 +341,7 @@
 				5BC520B32435423C00040443 /* SwitchViewController.storyboard in Resources */,
 				B5C300DD1B0FC458003B05A0 /* LaunchScreen.storyboard in Resources */,
 				5BFC7A172437EB1C001EDAC0 /* content.html in Resources */,
+				5B7D021D245747E700270872 /* BJCollectionVC.storyboard in Resources */,
 				5BFC7A112437B1E9001EDAC0 /* PickerViewController.storyboard in Resources */,
 				B51AD3F91B1A8A6A00083F63 /* Search.storyboard in Resources */,
 				228DB9FA18BC53F1002BA12A /* InfoPlist.strings in Resources */,
@@ -341,12 +359,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BC5207224325BB100040443 /* StepperViewController.swift in Sources */,
+				5B7D021E245747E700270872 /* BJCollectionViewController.swift in Sources */,
 				5BC5207724325BB100040443 /* ButtonViewController.swift in Sources */,
 				5BC5207324325BB100040443 /* AlertControllerViewController.swift in Sources */,
 				5BC5209C2432655200040443 /* SearchResultsViewController.swift in Sources */,
 				5BC520A12432655200040443 /* DefaultSearchBarViewController.swift in Sources */,
 				5BC5209B2432655200040443 /* SearchBarEmbeddedInNavigationBarViewController.swift in Sources */,
 				5BC5207E24325BB100040443 /* SegmentedControlViewController.swift in Sources */,
+				5B7D02202457490200270872 /* BJCollectionViewCell.swift in Sources */,
 				5BC5209A2432655200040443 /* DefaultToolbarViewController.swift in Sources */,
 				5BC5207A24325BB100040443 /* ActivityIndicatorViewController.swift in Sources */,
 				5BC5208024325BB100040443 /* DatePickerController.swift in Sources */,

@@ -33,7 +33,8 @@ class MasterViewController: BaseTableViewController {
         MasterItem(title: "Text Fields", subTitle: "TextFieldViewController", twoLevel: false),
         MasterItem(title: "Text View", subTitle: "TextViewController", twoLevel: false),
         MasterItem(title: "Toolbars", subTitle: "ToolbarViewControllers", twoLevel: true),
-        MasterItem(title: "Web View", subTitle: "WebViewController", twoLevel: false)
+        MasterItem(title: "Web View", subTitle: "WebViewController", twoLevel: false),
+        MasterItem(title: "BJ Collection View", subTitle: "BJCollectionVC", twoLevel: false)
     ]
     
     override func viewDidLoad() {
